@@ -9,7 +9,7 @@ mongoose.connection.once("open", () => {
   console.log("Mongodb connection established successfully");
 });
 
-const PORT = 4000;
+const PORT = process.ENV.PORT || 4000;
 
 const app = express();
 
